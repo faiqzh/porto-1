@@ -1,0 +1,100 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    line-height: 1.3;
+    background-color: $darkblue;
+    color: white;
+    font-family: $inter;
+    font-size: 15px;
+
+   
+}
+
+.main-content {
+    margin: 5%;
+    background-color: $bluedesaturate;
+    border-radius: 8px;
+
+
+
+
+
+
+
+
+
+    .text-content_head_insight {
+        color: $Softviolet;
+    }
+
+    .text-content-1 {
+        margin-bottom: 80px;
+
+    }
+
+    .text-content{
+
+        margin: 80px 80px 40px 80px;
+        
+    }
+
+    .img-content{
+        background-color: $Softviolet;
+
+
+    }
+
+    .image-desk {
+
+        margin: inherit;
+        mix-blend-mode: multiply;
+        opacity: .8;
+
+
+        
+    }
+
+    .image-mob {
+        
+        mix-blend-mode: multiply;
+        opacity: .8;
+
+
+
+    
+    }
+
+}
+
+.details{
+    display: flex;
+    flex-wrap: wrap;
+        
+    .amount {
+        
+    justify-content: center;
+        
+        p{
+            text-transform: uppercase;
+        }
+        
+        h2{
+            line-height: 13px;
+            
+        }
+        
+
+
+    }
+}
+
+
+
+

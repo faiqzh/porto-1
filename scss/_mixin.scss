@@ -1,0 +1,86 @@
+@media (min-width: 1024px) {
+    .image-desk{
+        display: box;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .img-content{
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    .image-mob{
+        display: none;
+    }
+    .main-content{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .amount:not(:last-child) {
+        margin-right: 60px;
+    
+    }
+}
+
+@media (max-width: 1023px) {
+
+    .image-desk{
+        display: none;
+    }
+
+    .image-mob{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .img-content{
+        background-color: $Softviolet;
+        width: 100%;
+        margin: 0;
+
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 100px 25px 100px 25px;
+        font-size: 60%;
+
+        .text-content{
+            margin: 40px;
+            .text-content-1{
+                margin: 40px;
+            }
+            
+        }
+
+    }
+    .details{
+        display: grid;
+        justify-content:center;
+        text-align: center;
+        .amount{
+            margin: 0px;
+        }
+    }
+
+    
+}
+
+$breakpoints-up : ('medium':'400em', 'large': '64em', 'xlarge':'87.5em');
+$breakpoints-down : ('small':'39.9375em', 'medium':'63.9375em', 'large':'87.4375em');
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-up($size){
+    @media (min-width: map-get($breakpoints-up, $size)){
+        @content;
+    } 
+}
+
