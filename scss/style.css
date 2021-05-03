@@ -108,6 +108,7 @@ body {
     background-color: #aa5cdb;
     width: 100%;
     margin: 0;
+    border-radius: 8px 8px 0 0;
   }
   .main-content {
     display: -webkit-box;
